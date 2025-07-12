@@ -29,35 +29,64 @@ Air-go-Backend-Project/
 ├── src/
 │ └── main/
 │ ├── java/
-│ │ └── air/
-│ │ └── go/
-│ │ ├── files/ # 📄 Handles booking document exports (e.g., .docx via Apache POI)
-│ │ │ ├── BookingLogs.java # → [Planned/Bookings-related class]
-│ │ │ └── CreateDocument.java # → Generates booking confirmation documents (in progress)
-│ │ └── base/ # 🧱 Core package for business logic, DAO, and data models
-│ │ ├── dao/ # 🛢 Data Access Objects: Handle DB operations
-│ │ ├── services/ # 🔌 Business services & interfaces (Admin/User/Manager logic)
-│ │ │ └── [UserService, AdminService, etc.]
-│ │ ├── BookingDetails.java # 📦 Data class: Holds passenger + flight + seat booking data
-│ │ ├── Flight.java # 📦 Data class: Flight details (source, destination, date, etc.)
-│ │ ├── Users.java # 📦 Data class: User info (role, credentials, name, etc.)
-│ │ ├── Transactions.java # 📦 Data class: Handles payment/transaction records
-│ │ └── package-info.java # 🗂️ Optional package-level annotations
+│ │ └── air/go/
+│ │ ├── files/
+│ │ │ ├── BookingLogs.java
+│ │ │ └── CreateDocument.java
+│ │ └── base/
+│ │ ├── dao/
+│ │ ├── services/
+│ │ ├── BookingDetails.java
+│ │ ├── Flight.java
+│ │ ├── Users.java
+│ │ ├── Transactions.java
+│ │ └── package-info.java
 │ └── resources/
-│ ├── bookings.json # 📄 Static/mock flight or booking data for testing
-│ └── hibernate.cfg.xml # ⚙️ Hibernate configuration (DB connection settings)
+│ ├── bookings.json
+│ └── hibernate.cfg.xml
 ├── webapp/
-│ ├── WEB-INF/ # 🛠 Web descriptor config (contains web.xml)
-│ ├── add-flight.jsp # 🧑‍✈️ Admin: Add flight data
-│ ├── admin.jsp # 🧑‍✈️ Admin dashboard
-│ ├── book-flight.jsp # 👤 User: Review and confirm booking
-│ ├── booking-form.jsp # 👤 User: Fill booking details
-│ ├── confirm.jsp # ✅ Booking confirmation
-│ ├── edit-flight.jsp # 🧑‍✈️ Admin/Manager: Modify flight
-│ ├── index.jsp # 🏠 Home/Login page
-│ ├── manager.jsp # 🧑‍💼 Manager dashboard
-│ ├── payment.jsp # 💳 Payment input
-│ └── show-aval-flights.jsp # ✈️ Displays search results of available flights
+│ ├── WEB-INF/
+│ ├── add-flight.jsp
+│ ├── admin.jsp
+│ ├── book-flight.jsp
+│ ├── booking-form.jsp
+│ ├── confirm.jsp
+│ ├── edit-flight.jsp
+│ ├── index.jsp
+│ ├── manager.jsp
+│ ├── payment.jsp
+│ └── show-aval-flights.jsp
+
+### 🧠 Explanation of Key Folders & Files
+
+- `files/` → Booking document generation using Apache POI  
+  - `CreateDocument.java`: Exports booking info to DOCX  
+  - `BookingLogs.java`: (Planned) To log booking activities
+
+- `base/` → Main logic + models  
+  - `dao/`: All database operation classes  
+  - `services/`: Interfaces and implementations for Admin/User/Manager logic  
+  - `BookingDetails.java`: Holds booking data (flight, user, seat, etc.)  
+  - `Flight.java`: Holds flight info (source, destination, etc.)  
+  - `Users.java`: Holds user info (login, role, etc.)  
+  - `Transactions.java`: Holds payment/transaction records
+
+- `resources/` → Config and mock data  
+  - `hibernate.cfg.xml`: Hibernate DB connection config  
+  - `bookings.json`: Sample data for testing
+
+- `webapp/` → JSP front-end and routing  
+  - `add-flight.jsp`: Admin adds new flights  
+  - `admin.jsp`: Admin dashboard  
+  - `book-flight.jsp`: Final user booking confirmation  
+  - `booking-form.jsp`: User enters booking info  
+  - `confirm.jsp`: Confirmation page  
+  - `edit-flight.jsp`: Edit flights (Admin/Manager)  
+  - `index.jsp`: Home or login page  
+  - `manager.jsp`: Manager dashboard  
+  - `payment.jsp`: Payment input form  
+  - `show-aval-flights.jsp`: Displays all available flights
+
 
 ---
 
