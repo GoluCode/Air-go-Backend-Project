@@ -134,7 +134,7 @@ Air-go-Backend-Project/
 
 > This project was designed by intuition before learning about formal software architecture patterns.  
 > Only later did I discover that my structure closely matches real-world Monolithic MVC.  
-> My focus was on:
+>**My focus was on:**
 - Clean separation of responsibilities
 - Scalable role management using polymorphism
 - Future support for testing and modularization
