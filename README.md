@@ -33,17 +33,16 @@ Air-go-Backend-Project/
 │ │ └── go/
 │ │ ├── files/ # 📄 Handles booking document exports (e.g., .docx via Apache POI)
 │ │ │ ├── BookingLogs.java # → [Planned/Bookings-related class]
-│ │ │ └── CreateDocument.java # → Generates booking confirmation documents # ( in progress )
+│ │ │ └── CreateDocument.java # → Generates booking confirmation documents (in progress)
 │ │ └── base/ # 🧱 Core package for business logic, DAO, and data models
-│ │ ├── dao/ # 🛢 Data Access Objects (handle DB operations)
-│ │ │ └── [All DB interaction classes]
+│ │ ├── dao/ # 🛢 Data Access Objects: Handle DB operations
 │ │ ├── services/ # 🔌 Business services & interfaces (Admin/User/Manager logic)
 │ │ │ └── [UserService, AdminService, etc.]
 │ │ ├── BookingDetails.java # 📦 Data class: Holds passenger + flight + seat booking data
 │ │ ├── Flight.java # 📦 Data class: Flight details (source, destination, date, etc.)
 │ │ ├── Users.java # 📦 Data class: User info (role, credentials, name, etc.)
 │ │ ├── Transactions.java # 📦 Data class: Handles payment/transaction records
-│ │ └── package-info.java # 🗂️ (Optional package-level annotations)
+│ │ └── package-info.java # 🗂️ Optional package-level annotations
 │ └── resources/
 │ ├── bookings.json # 📄 Static/mock flight or booking data for testing
 │ └── hibernate.cfg.xml # ⚙️ Hibernate configuration (DB connection settings)
