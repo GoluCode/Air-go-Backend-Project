@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- Basic DB settings -->
+        <property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+        <property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:xe</property>
+        <property name="hibernate.connection.username">FLIGHT_RESERVATIONDB</property>
+        <property name="hibernate.connection.password">password</property>
+
+        <!-- Hibernate -->
+       <property name="hibernate.dialect">org.hibernate.dialect.OracleDialect</property>
+
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+
+        <!-- Mapped class -->
+		<mapping class="go.base.Users"></mapping>
+		<mapping class="go.base.Flight"></mapping>
+		<mapping class="go.base.Transactions"></mapping>
+		<mapping class="go.base.BookingDetails"></mapping>
+		
+
+    </session-factory>
+</hibernate-configuration>

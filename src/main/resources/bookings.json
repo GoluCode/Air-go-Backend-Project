@@ -1,0 +1,22 @@
+[ {
+  "name" : "Ravi",
+  "pnr" : "PNR-D0112A60",
+  "bookingId" : "BK-1752181465769-9215",
+  "flightId" : "FL003",
+  "vendor" : "SpiceJet",
+  "travelClass" : "Economy"
+}, {
+  "name" : "Jackson",
+  "pnr" : "PNR-C1AEC06E",
+  "bookingId" : "BK-1752273405495-1778",
+  "flightId" : "FL003",
+  "vendor" : "SpiceJet",
+  "travelClass" : "Economy"
+}, {
+  "name" : "Thomas",
+  "pnr" : "PNR-5D98B88A",
+  "bookingId" : "BK-1752275767542-3405",
+  "flightId" : "BIN-123",
+  "vendor" : "BOING",
+  "travelClass" : "Economy"
+} ]
