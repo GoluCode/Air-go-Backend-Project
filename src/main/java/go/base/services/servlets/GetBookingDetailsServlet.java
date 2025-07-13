@@ -35,7 +35,7 @@ public class GetBookingDetailsServlet extends HttpServlet {
 
         if (!file.exists()) {
             request.setAttribute("error", "Booking data not available.");
-            request.getRequestDispatcher("view-booking.jsp").forward(request, response);
+            request.getRequestDispatcher("view-booking.jsp").forward(request, response);//
             return;
         }
 

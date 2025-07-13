@@ -46,6 +46,7 @@ public class BookingLogs {
             logs.add(entry);
 
             mapper.writerWithDefaultPrettyPrinter().writeValue(file, logs);
+            System.out.println("This Line");
 
         } catch (Exception e) {
             e.printStackTrace();
