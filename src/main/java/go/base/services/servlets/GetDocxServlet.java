@@ -7,14 +7,13 @@ import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.net.http.HttpHeaders;
 
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 
+import jakarta.servlet.*;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 import org.apache.poi.xwpf.usermodel.XWPFDocument;
 import org.apache.poi.xwpf.usermodel.XWPFParagraph;
@@ -31,12 +30,11 @@ public class GetDocxServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		
-		
-	
-	
+			
+		System.out.println(getRequestBody(request));
 		// reading file
 		String path = request.getParameter("path");
+		
 		
 		System.out.println("Received path: " + path);
 		String line;
@@ -76,6 +74,16 @@ public class GetDocxServlet extends HttpServlet {
 
 			e.printStackTrace();
 		}
+	}
+	
+	public  static String getRequestBody(HttpServletRequest request) throws IOException {
+	    StringBuilder sb = new StringBuilder();
+	    BufferedReader reader = request.getReader();
+	    String line;
+	    while ((line = reader.readLine()) != null) {
+	        sb.append(line);
+	    }
+	    return sb.toString();
 	}
 
 }

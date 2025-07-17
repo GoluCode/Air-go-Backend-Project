@@ -19,4 +19,11 @@
   "flightId" : "BIN-123",
   "vendor" : "BOING",
   "travelClass" : "Economy"
+}, {
+  "name" : "Shyam Sunder Roy",
+  "pnr" : "PNR-522F2AD7",
+  "bookingId" : "BK-1752488512076-8965",
+  "flightId" : "FL003",
+  "vendor" : "SpiceJet",
+  "travelClass" : "Business"
 } ]
