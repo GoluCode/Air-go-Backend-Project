@@ -92,8 +92,8 @@ Air-go-Backend-Project/
 
 ## 🧑‍💻 Tech Stack
 
-- Java (JDK 1.8)
-- JSP + Servlets (Apache Tomcat 9)
+- Java (JDK 17)
+- JSP + Servlets (Apache Tomcat 11)
 - JDBC + Hibernate ORM
 - Oracle DB (test DB)
 - Apache POI (for docx export)
@@ -109,7 +109,7 @@ Air-go-Backend-Project/
 
 2. Open in **Eclipse** as a Dynamic Web Project
 
-3. Set up **Tomcat** (version 9 preferred)
+3. Set up **Tomcat** (version 11 preferred)
 
 4. Configure DB credentials in `hibernate.cfg.xml` and/or JDBC connection file
 
