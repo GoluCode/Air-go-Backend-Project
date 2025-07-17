@@ -26,4 +26,11 @@
   "flightId" : "FL003",
   "vendor" : "SpiceJet",
   "travelClass" : "Business"
+}, {
+  "name" : "Shyam Sunder Roy",
+  "pnr" : "PNR-FE6C9281",
+  "bookingId" : "BK-1752744677855-4747",
+  "flightId" : "FL003",
+  "vendor" : "SpiceJet",
+  "travelClass" : "Economy"
 } ]
